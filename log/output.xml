@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230810 14:40:25.473" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo4 Python Call" source="C:\Mine\Company\Iverson Aug 2023\RobotProject\robot_suite\demo4_python_call.robot">
+<test id="s1-t1" name="TC1" line="5">
+<kw name="Area Of Circle" library="Area">
+<var>${res}</var>
+<arg>10</arg>
+<msg timestamp="20230810 14:40:25.790" level="INFO">${res} = 314.1592653589793</msg>
+<status status="PASS" starttime="20230810 14:40:25.790" endtime="20230810 14:40:25.792"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${res}</arg>
+<arg>314</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20230810 14:40:25.792" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<msg timestamp="20230810 14:40:25.793" level="FAIL">314.159265 != 314.0</msg>
+<status status="FAIL" starttime="20230810 14:40:25.792" endtime="20230810 14:40:25.793"/>
+</kw>
+<status status="FAIL" starttime="20230810 14:40:25.789" endtime="20230810 14:40:25.793">314.159265 != 314.0</status>
+</test>
+<status status="FAIL" starttime="20230810 14:40:25.476" endtime="20230810 14:40:25.794"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo4 Python Call">Demo4 Python Call</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
